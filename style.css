@@ -6,6 +6,10 @@ body{
 a {
     text-decoration: none;
 }
+img{
+    max-width: 100%;
+}
+
 .container{
     max-width: 800px;
     margin: auto;
@@ -45,14 +49,23 @@ header {
     .menu_hamburger{
         display: block;
     }
+    .menu_header {
+        display: none;
+    }
 }
 .grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat( auto-fit, minmax(0px, 250px));
+    grid-gap: 20px;
     max-width: 800px;
     width: 100%;
+   justify-content: center;
 }
-img{
-    max-width: 100%;
+.grid-item {
+    background-image: url(./imagens/fundo-caixa.png);
+}
+.container_principa {
+    margin: 8px;
+    background: white;
 }
 
