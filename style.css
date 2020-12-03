@@ -46,28 +46,13 @@ header {
         display: block;
     }
 }
-
-.entrevistas img {
-    max-width: 250px;
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 800px;
     width: 100%;
 }
-.centro {
-    max-width: 200px;
-    width: 100%;
-}
-.rigth{
-    max-width: 200px;
-    width: 100%;
-}
-
-.container_principal{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 0 auto;
-}
-.container_principal > div{
-    flex: 1 1 200px;
-    margin: 10px;
+img{
+    max-width: 100%;
 }
 
