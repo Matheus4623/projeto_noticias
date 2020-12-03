@@ -1,0 +1,73 @@
+body{
+    padding: 0px;
+    margin: 0px;
+   
+}
+a {
+    text-decoration: none;
+}
+.container{
+    max-width: 800px;
+    margin: auto;
+}
+/* header */
+header {
+    background-image: url(imagens/fundo.png);
+    height: 233px;
+}
+.topo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.menu {
+    margin-top: 20px;
+}
+.menu_header ul {
+    display: flex;
+    background: #b20030;
+    list-style: none;
+    padding: 0px;
+}
+.menu_header li {
+    padding: 11px 12px;
+}
+.menu_header a {
+    color: white;
+}
+.detalhe img {
+    width: auto;
+}
+.menu_hamburger{
+    display: none;
+}
+@media(max-width: 768px){
+    .menu_hamburger{
+        display: block;
+    }
+}
+
+.entrevistas img {
+    max-width: 250px;
+    width: 100%;
+}
+.centro {
+    max-width: 200px;
+    width: 100%;
+}
+.rigth{
+    max-width: 200px;
+    width: 100%;
+}
+
+.container_principal{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+}
+.container_principal > div{
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
