@@ -21,22 +21,21 @@ header {
 }
 .topo {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 .menu {
     margin-top: 20px;
 }
-.menu_header ul {
+#menu_header ul {
     display: flex;
     background: #b20030;
     list-style: none;
     padding: 0px;
 }
-.menu_header li {
+#menu_header li {
     padding: 11px 12px;
 }
-.menu_header a {
+#menu_header a {
     color: white;
 }
 .detalhe img {
@@ -45,27 +44,45 @@ header {
 .menu_hamburger{
     display: none;
 }
+.menu_hamburger img {
+    z-index: 999999;
+    position: relative;
+    left: 15px;
+}
+#menu_header li:hover {
+    background: #de003e;
+}
 @media(max-width: 768px){
     .menu_hamburger{
         display: block;
+       
     }
-    .menu_header {
+    #menu_header {
         display: none;
+        width: 60%;
+        position: absolute;
+        background: #ececec;
+        height: 100%;
+        top: 0px;
     }
-}
-.grid{
-    display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(0px, 250px));
-    grid-gap: 20px;
-    max-width: 800px;
-    width: 100%;
-   justify-content: center;
-}
-.grid-item {
-    background-image: url(./imagens/fundo-caixa.png);
-}
-.container_principa {
-    margin: 8px;
-    background: white;
+    #menu_header:after{
+        position: fixed;
+        top: 0px;
+        width: 40%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        right: 0;
+        content: "";
+        z-index: 9;
+    }
+    #menu_header ul {
+        display: block;
+        background: #ececec;
+        margin-top: 60px;
+        margin-left: 20px;
+    }
+    #menu_header a {
+        color: black;
+    }
 }
 
