@@ -9,10 +9,25 @@ a {
 img{
     max-width: 100%;
 }
+ul {
+    padding: 0;
+}
+input[type="email"] {
+    width: 90%;
+    margin: auto;
+}
 
 .container{
     max-width: 800px;
     margin: auto;
+}
+@media(max-width: 768px){
+    .container{
+        margin: auto 10px;
+    }
+}
+li {
+    list-style: none;
 }
 /* header */
 header {
@@ -85,4 +100,66 @@ header {
         color: black;
     }
 }
-
+/* Container Principal */
+.menu_lateral {
+    float: left;
+    background-image: url(./imagens/fundo-caixa.png);
+    margin-right: 20px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(0px, 260px) );
+    grid-gap: 10px;
+    justify-content: center;
+}
+.grid-item {
+    background-image: url(./imagens/fundo-caixa.png);
+}
+.noticias {
+    background: white;
+    margin: 10px 10px;
+}
+.new_noticias {
+    background: white;
+    margin: 10px;
+}
+.newsletter {
+    background: white;
+    margin: 10px;
+    text-align: center;
+}
+h2.titulo {
+    background: #294c71;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+}
+.button {
+    border: none;
+    background: #b20030;
+    font-size: 18px;
+    color: white;
+    padding: white;
+    padding: 2px 14px;
+    margin: 10px auto;
+    display: flex;
+    
+}
+.menu_lateral .button{
+    width: 100%;
+}
+.menu_lateral a {
+    color: black;
+    margin: 0px;
+    font-size: 16px;
+}
+.menu_lateral li {
+    margin: 10px 0px;
+}
+@media(max-width: 500px){
+    .menu_lateral {
+        max-width: 100px;
+        width: 100%;
+    }
+}
